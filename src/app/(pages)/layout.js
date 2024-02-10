@@ -22,7 +22,7 @@ export default function RootLayout({
     const pathname = usePathname()
     return (
     <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
-      <ThemeProvider attribute='class' defaultTheme='light'>
+      {/* <ThemeProvider attribute='class' defaultTheme='light'> */}
         <TopLeftImg />
         <Nav />
         <Header />
@@ -32,7 +32,7 @@ export default function RootLayout({
              {children}    
            {/* </motion.div> */}
         {/* </AnimatePresence> */}
-      </ThemeProvider>   
+      {/* </ThemeProvider>    */}
     </div>    
   )
 }
