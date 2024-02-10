@@ -27,8 +27,8 @@ export default function RootLayout({
         <Nav />
         <Header />
         <AnimatePresence mode='wait'>
-           <motion.div key={pathname} className='h-full'>
-             <Transition />
+           <motion.div  className='h-full'>
+             {/* <Transition /> */}
              {children}    
            </motion.div>
         </AnimatePresence>

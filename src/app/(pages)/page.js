@@ -1,7 +1,6 @@
 "use client"
 import ProjectsBtn from '@/components/ProjectsBtn';
 import {motion} from 'framer-motion';
-import Image from 'next/image';
 import { fadeIn } from '../../../variants';
 import Avatar from '@/components/Avatar';
 import ParticlesContainer from '@/components/ParticlesContainer';
