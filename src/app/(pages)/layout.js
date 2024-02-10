@@ -16,7 +16,7 @@ const sora = Sora({
 })
 
 export default function RootLayout({
-    children,
+    children
   }) {
 
     const pathname = usePathname()
@@ -26,12 +26,12 @@ export default function RootLayout({
         <TopLeftImg />
         <Nav />
         <Header />
-        <AnimatePresence mode='wait'>
-           <motion.div  className='h-full'>
+        {/* <AnimatePresence mode='wait'> */}
+           {/* <motion.div key={pathname} className='h-full'> */}
              {/* <Transition /> */}
              {children}    
-           </motion.div>
-        </AnimatePresence>
+           {/* </motion.div> */}
+        {/* </AnimatePresence> */}
       </ThemeProvider>   
     </div>    
   )
