@@ -28,7 +28,7 @@ const Home = () => {
           animate='show'
           exit='hidden'
           className=' max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-12'>
-           Greetings, I'm Syeed, a seasoned web developer with an extensive 10+ year journey in the world of web technologies. Proficient in ReactJS, Redux, NextJs, Elementor Pro, WordPress, HTML5, CSS3, Bootstap, Tailwindcss
+           Greetings, I am Syeed, a seasoned web developer with an extensive 10+ year journey in the world of web technologies. Proficient in ReactJS, Redux, NextJs, Elementor Pro, WordPress, HTML5, CSS3, Bootstap, Tailwindcss
 
           </motion.p>
           {/* btn */}
