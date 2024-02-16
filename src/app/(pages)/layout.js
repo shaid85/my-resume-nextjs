@@ -6,7 +6,6 @@ import {Sora} from 'next/font/google';
 import {AnimatePresence, motion} from 'framer-motion';
 import Transition from '@/components/Transition';
 import { usePathname } from 'next/navigation';
-import { ThemeProvider } from '@/components/ThemeProvider';
 
 // font setting
 const sora = Sora({
@@ -22,17 +21,17 @@ export default function RootLayout({
     const pathname = usePathname()
     return (
     <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
-      {/* <ThemeProvider attribute='class' defaultTheme='light'> */}
+
         <TopLeftImg />
         <Nav />
         <Header />
-        {/* <AnimatePresence mode='wait'> */}
-           {/* <motion.div key={pathname} className='h-full'> */}
-             {/* <Transition /> */}
+        <AnimatePresence mode='wait'>
+           <motion.div key={pathname} className='h-full'>
+             <Transition />
              {children}    
-           {/* </motion.div> */}
-        {/* </AnimatePresence> */}
-      {/* </ThemeProvider>    */}
+           </motion.div>
+        </AnimatePresence>
+
     </div>    
   )
 }
