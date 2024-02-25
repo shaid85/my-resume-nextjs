@@ -7,7 +7,7 @@ const ProjectsBtn = () => {
     <div className="mx-auto xl:mx-0">
       <Link 
       href={'/work'}
-      className=" relative  flex justify-center items-center bg-cover bg-center bg-no-repeat group"
+      className="bg-black/10 relative  flex justify-center items-center bg-cover bg-center bg-no-repeat group"
       >
         {/* <Image 
           src={'/rounded-text.png'}
